@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/outside_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.tuckingfypos.to_do_list.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:id="@+id/list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/list_header"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:text="To-Do List Title"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:onClick="toList"
+            />
+        <TextView
+            android:id="@+id/list_header2"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:text="To-Do List Title 2"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:onClick="toList"
+            />
+            <TextView
+                android:id="@+id/list_header3"
+                android:layout_margin="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_dark"
+                android:text="To-Do List Title 3"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:onClick="toList"
+                />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/new_list_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="(start a new to-do list here)"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray"
+
+        />
+</RelativeLayout>

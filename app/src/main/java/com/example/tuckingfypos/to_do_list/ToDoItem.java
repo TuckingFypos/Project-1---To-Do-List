@@ -4,21 +4,30 @@ package com.example.tuckingfypos.to_do_list;
  * Created by TuckingFypos on 7/7/16.
  */
 public class ToDoItem {
-    private String mItem;
+    private String mTitle;
+    private String mDescription;
 
-    public ToDoItem(String mItem) {
-        this.mItem = mItem;
+    public ToDoItem(String mTitle, String mDescription) {
+        this.mTitle = mTitle; this.mDescription = mDescription;
     }
 
     public ToDoItem(){
-        mItem = "";
+        mTitle = "Item";
     }
 
-    public String getmItem() {
-        return mItem;
+    public String getmTitle() {
+        return mTitle;
     }
 
-    public void setmItem(String mItem) {
-        this.mItem = mItem;
+    public void setmTitle(String mItem) {
+        this.mTitle = mItem;
+    }
+
+    public String getmDescription() {
+        return mDescription;
+    }
+
+    public void setmDescription(String mDescription) {
+        this.mDescription = mDescription;
     }
 }

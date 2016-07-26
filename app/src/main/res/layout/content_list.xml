@@ -10,17 +10,18 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.tuckingfypos.to_do_list.ListActivity"
-    tools:showIn="@layout/activity_main">
+    tools:showIn="@layout/activity_list">
 
     <ListView
-        android:id="@+id/to_do_list_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"></ListView>
+        android:id="@+id/items_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
     <TextView
-        android:id="@+id/empty_list_text_view"
+        android:id="@+id/empty_item_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/empty_list_message"
+        android:text="@string/empty_item_message"
         android:visibility="gone"
         android:layout_centerInParent="true"/>
+
 </RelativeLayout>

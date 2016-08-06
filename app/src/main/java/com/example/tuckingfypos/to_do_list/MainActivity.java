@@ -21,7 +21,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText getText;
     Singleton mSingleton;
     CustomListAdapter mCustomListAdapter;
 

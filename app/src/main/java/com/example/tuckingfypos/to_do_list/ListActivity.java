@@ -67,7 +67,7 @@ public class ListActivity extends AppCompatActivity {
     public void showInputDialog(){
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         LayoutInflater inflater = this.getLayoutInflater();
-        View dialogView = inflater.inflate(R.layout.item_text_dialog, null);
+        View dialogView = inflater.inflate(R.layout.text_dialog, null);
         dialogBuilder.setView(dialogView);
 
         final EditText titleEditText = (EditText) dialogView.findViewById(R.id.title_text);

@@ -95,8 +95,8 @@ public class MainActivity extends AppCompatActivity {
 
         final EditText editText = (EditText) dialogView.findViewById(R.id.title_text);
 
-        dialogBuilder.setTitle("List Title");
-        dialogBuilder.setMessage("Enter title below");
+        dialogBuilder.setTitle("Add a New List");
+        dialogBuilder.setMessage("Enter a List Title Below");
         dialogBuilder.setPositiveButton("Done", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
                 if(editText.getText().toString().length() == 0) {

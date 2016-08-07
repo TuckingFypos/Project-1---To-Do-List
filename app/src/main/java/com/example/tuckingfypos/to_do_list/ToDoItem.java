@@ -11,10 +11,6 @@ public class ToDoItem {
         this.mTitle = mTitle; this.mDescription = mDescription;
     }
 
-    public ToDoItem(){
-        mTitle = "Item";
-    }
-
     public String getmTitle() {
         return mTitle;
     }

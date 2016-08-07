@@ -1,5 +1,6 @@
 package com.example.tuckingfypos.to_do_list;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,6 +13,7 @@ public class ToDoList {
 
     public ToDoList(String mTitle) {
         this.mTitle = mTitle;
+        mToDoItemsList = new ArrayList<>();
     }
 
     public String getTitle() {

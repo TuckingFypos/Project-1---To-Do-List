@@ -43,8 +43,7 @@ public class ListActivity extends AppCompatActivity {
         toolbar.setTitle(mSingleton.getToDoLists().get(mListIndex).getTitle());
 
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+//        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         mListAdapter = new ToDoListAdapter(this,mSingleton.getToDoLists().get(mListIndex).getToDoItems());
         ListView listView = (ListView)findViewById(R.id.items_list_view);

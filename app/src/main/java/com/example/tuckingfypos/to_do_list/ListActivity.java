@@ -38,7 +38,7 @@ public class ListActivity extends AppCompatActivity {
 
         mSingleton = Singleton.getInstance();
 
-        mListIndex = getIntent().getIntExtra("index",-1);
+        mListIndex = getIntent().getIntExtra("index",0);
 
         toolbar.setTitle(mSingleton.getToDoLists().get(mListIndex).getTitle());
 
@@ -84,6 +84,8 @@ public class ListActivity extends AppCompatActivity {
                             add(new ToDoItem(titleEditText.getText().toString(),
                                     descriptionEditText.getText().toString()));
                     mListAdapter.notifyDataSetChanged();
+                    Toast.makeText(ListActivity.this, "Added item " +mSingleton.getToDoLists()
+                            .get(mListIndex).getToDoItems().size(), Toast.LENGTH_SHORT).show();
                 }
             }
         });

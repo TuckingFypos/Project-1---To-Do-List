@@ -83,17 +83,16 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
     public void showInputDialog(){
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         LayoutInflater inflater = this.getLayoutInflater();
-        final View dialogView = inflater.inflate(R.layout.text_dialog, null);
+        final View dialogView = inflater.inflate(R.layout.list_dialog, null);
         dialogBuilder.setView(dialogView);
 
-        final EditText editText = (EditText) dialogView.findViewById(R.id.title_text);
+        final EditText editText = (EditText) dialogView.findViewById(R.id.list_title_text);
 
         dialogBuilder.setTitle("Add a New List");
         dialogBuilder.setMessage("Enter a List Title Below");

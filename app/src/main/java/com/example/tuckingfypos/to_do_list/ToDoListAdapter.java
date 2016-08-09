@@ -23,7 +23,9 @@ public class ToDoListAdapter extends ArrayAdapter<ToDoItem> {
 
     @Override
     public int getCount() {
-        return 0;
+        if(items.size()!=0){return items.size();}else{
+
+        return 0;}
     }
 
     @Override
